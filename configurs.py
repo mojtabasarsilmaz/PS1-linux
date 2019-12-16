@@ -7,8 +7,8 @@ import os
 try:
     import getpass as gs
 except ImportError:
-    os.system("apt-get install python3-pip")
-    os.system("pip3 install getpass4")
+    os.system("sudo apt-get install python3-pip")
+    os.system("sudo pip3 install getpass4")
 
 PS1 = str(input("Enter your ps1"))
 USER = gs.getuser()
